@@ -1,0 +1,66 @@
+.barcode-app {
+  color: #111111; }
+.barcode-app .btn {
+  border-radius: 0px; }
+.barcode-app .app-header {
+  padding: 10px 0px;
+  background-color: #333333;
+  border-bottom: 1px solid #111;
+  position: fixed;
+  width: 100%;
+  height: 3.85em;
+  z-index: 2; }
+.barcode-app .app-header .brand-name {
+  font-weight: bold;
+  color: #FFF;
+  padding: 8px 0px;
+  display: inline-block;
+  text-decoration: none; }
+.barcode-app .powered-by {
+  position: fixed;
+  top: 95vh;
+  background-color: #111;
+  padding: 8px 20px;
+  width: 16.557%;
+  color: #EEE; }
+.barcode-app .main-content {
+  margin-top: 3.85em; }
+.barcode-app .barcode-input {
+  resize: none;
+  height: 95vh;
+  width: 100%;
+  border: none;
+  outline: none;
+  width: 16.557%;
+  position: fixed;
+  background-color: #666;
+  color: #FFF;
+  padding: 15px 10px 10px; }
+.barcode-app .dropdown-menu li {
+  padding: 6px 10px;
+  cursor: pointer; }
+.barcode-app .dropdown-menu li:hover {
+  background-color: #DDD; }
+.barcode-app .barcode {
+  box-shadow: 0px 0px 2px #AAA;
+  margin: 10px 0px;
+  text-align: center; }
+
+.no-padding {
+  padding: 0px; }
+
+@media (max-width: 768px) {
+  .barcode-app .barcode-input {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 20px; }
+
+  .powered-by {
+    width: 100%;
+    position: relative; } }
+@media print {
+  .no-print, .no-print * {
+    display: none !important; } }
+
+/*# sourceMappingURL=main.css.map */

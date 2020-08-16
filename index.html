@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple Barcode Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/bootstrap.min.css">
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/JsBarcode.all.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/assets/print.css" />
+    <script src="/assets/main.js"></script>
+</head>
+
+<body class="barcode-app">
+    <div class="container-fluid">
+        <div class="row app-header no-print">
+            <div class="col-sm-6 col-xs-6">
+                <a class="brand-name" href="/">Barcode Generator</a>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+                <button class="btn btn-primary dropdown-toggle pull-right btn-print" type="button" data-toggle="dropdown">
+                    <span class="title">Print</span>
+                </button>
+
+                <div class="dropdown pull-right hidden-xs hidden-sm" id="barcode-size">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="title">3</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+                <div class="dropdown pull-right" id="barcode-type">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="title">Auto</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>Auto</li>
+                        <li>CODE128</li>
+                        <li>CODE39</li>
+                        <li>EAN13</li>
+                        <li>EAN8</li>
+                        <li>EAN5</li>
+                        <li>EAN2</li>
+                        <li>UPC</li>
+                        <li>Pharmacode</li>
+                        <li>ITF14</li>
+                        <li>MSI</li>
+                        <li>MSI10</li>
+                        <li>MSI11</li>
+                        <li>MSI1010</li>
+                        <li>MSI1110</li>
+                        <li>Codabar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row main-content">
+            <div class="col-sm-2 no-padding">
+                <textarea name="barcode-input" id="barcode-input" 
+                placeholder="Type Barcode"
+                autofocus="autofocus"
+                 class="barcode-input no-print"></textarea>
+                <a href="https://github.com/initedit-project/" class="powered-by">Powered By Initedit</a>
+            </div>
+            <div class="col-sm-10 no-padding">
+                <div id="barcode-template" class="hidden">
+                    <div class="barcode">
+                        <svg class="svg-barcode"></svg>
+                    </div>
+                </div>
+                <div class="row-dummy" id="barcode-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

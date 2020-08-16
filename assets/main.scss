@@ -1,0 +1,92 @@
+.barcode-app{
+    &{
+        color: #111111;
+    }
+    .btn{
+        border-radius: 0px;
+    }
+    .app-header{
+        &{
+            padding: 10px 0px;
+            background-color: #333333;
+            border-bottom: 1px solid #111;
+            position: fixed;
+            width: 100%;
+            height: 3.85em;
+            z-index: 2;
+        }
+        .brand-name{
+            font-weight: bold;
+            color: #FFF;
+            padding: 8px 0px;
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+    .powered-by{
+        position: fixed;
+        top: 95vh;
+        background-color: #111;
+        padding: 8px 20px;
+        width: 16.557%;
+        color: #EEE;
+    }
+    .main-content{
+        margin-top: 3.85em;
+    }
+    .barcode-input{
+        resize: none;
+        height: 95vh;
+        width: 100%;
+        border: none;
+        outline: none;
+        width: 16.557%;
+        position: fixed;
+        background-color: #666;
+        color: #FFF;
+        padding: 15px 10px 10px;
+        
+    }
+    .dropdown-menu{
+        li{
+            &{
+            padding: 6px 10px;
+            cursor: pointer;
+            }
+            &:hover{
+                background-color: #DDD;
+
+            }
+        }
+    }
+    .barcode{
+        box-shadow: 0px 0px 2px #AAA;
+        margin: 10px 0px;
+        text-align: center;
+    }
+}
+.no-padding{
+    
+        padding: 0px;
+    
+}
+@media (max-width: 768px) {
+    .barcode-app{ 
+        .barcode-input{
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            padding: 20px;
+        }
+    }
+    .powered-by{
+        width: 100%;
+        position: relative;
+    }
+ }
+@media print {
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

@@ -1,0 +1,26 @@
+.no-print {
+    display: none;
+}
+.col-sm-4 {
+    width: 33.333333%;
+    float: left;
+}
+.col-sm-3 {
+    width: 25%;
+    float: left;
+}
+.col-sm-2 {
+    width: 50%;
+    float: left;
+}
+.col-sm-1 {
+    width: 100%;
+    float: none;
+}
+.powered-by{
+    width: 100%;
+    float: none;
+    display: block;
+    position: relative;
+    top: 0;
+}
